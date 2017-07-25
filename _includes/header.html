@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://www.sepal.in" >Home</a></li>
-                <li><a href="#Internal_Link1" onclick="test('Internal_Link1'); return false;">Product</a></li>
-                <li><a href="#Internal_Link2" onclick="test('Internal_Link2'); return false;"">Features</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link1" onclick="test('Internal_Link1'); return false;">Product</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link2" onclick="test('Internal_Link2'); return false;">Features</a></li>
                 <li><a href="http://www.sepal.in/about">About Us</a></li>
-                <li><a href="#Internal_Link3" onclick="test('Internal_Link3'); return false;">Contact Us</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link3" onclick="test('call-to-action'); return false;">Contact Us</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -37,11 +37,11 @@
 
 <script>
 function scrollTo(to, duration) {
-    if (document.body.scrollTop == to) return;
+    var start = document.body.scrollTop;
+    if (start == to) return;
     var diff = to - document.body.scrollTop;
     var scrollStep = Math.PI / (duration / 10);
     var count = 0, currPos;
-    start = element.scrollTop;
     scrollInterval = setInterval(function(){
         if (document.body.scrollTop != to) {
             count = count + 1;

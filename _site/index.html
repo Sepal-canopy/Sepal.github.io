@@ -64,17 +64,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="http://www.sepal.in">
               <img src="/img/logo.png" alt="Logo">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/work">Work</a></li>
-                <li><a href="/blog">Team</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="http://www.sepal.in" >Home</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link1" onclick="test('Internal_Link1'); return false;">Product</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link2" onclick="test('Internal_Link2'); return false;">Features</a></li>
+                <li><a href="http://www.sepal.in/about">About Us</a></li>
+                <li><a href="http://www.sepal.in/#Internal_Link3" onclick="test('call-to-action'); return false;">Contact Us</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -83,6 +84,30 @@
     </div>
   </div>
 </header><!-- header close -->
+
+<script>
+function scrollTo(to, duration) {
+    var start = document.body.scrollTop;
+    if (start == to) return;
+    var diff = to - document.body.scrollTop;
+    var scrollStep = Math.PI / (duration / 10);
+    var count = 0, currPos;
+    scrollInterval = setInterval(function(){
+        if (document.body.scrollTop != to) {
+            count = count + 1;
+            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+            document.body.scrollTop = currPos;
+        }
+        else { clearInterval(scrollInterval); }
+    },10);
+}
+
+function test(elID)
+{
+    var dest = document.getElementById(elID);
+    scrollTo(dest.offsetTop, 500);
+}
+</script>
 
 
 
@@ -101,12 +126,12 @@
 </section>
 <!-- Wrapper Start -->
 <section id="intro">
-  <div class="container">
+  <div class="container" id="Internal_Link1">
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
           
-            <h2>A design that feels too good to be true</h2>
+            <h2 >A design that feels too good to be true</h2>
             <p>We know how much you love your bike, we know how much you love riding it unconstrained. And so we have put in our heart and soul in designing sepal so that you don’t have to make single modification on your bike to fix it. Also fixing Sepal is super simple, you can do it all by yourself within 5 minutes
             </br></br>
            Biking is all about enjoying the right moments with the right view and fresh breeze. In such moments you can close sepal and it will sit snugly on the petrol tank not causing any hindrance to your experience. In case the moments aren’t right then sepal got you covered. Like literally.
@@ -162,10 +187,10 @@
 </section>
 <!-- Service Start -->
 <section id="service">
-  <div class="container">
+  <div class="container" id="Internal_Link2">
     <div class="row">
       <div class="section-title">
-        <h2>Features</h2>
+        <h2 >Features</h2>
       </div>
     </div>
     <div class="row ">
@@ -230,11 +255,11 @@
 </section>
 <!-- Call to action Start -->
 <section id="call-to-action" >
-
-  <div id="contact-box" class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <h2>Contact Us</h2>
+ <div class="container" id="Internal_Link3">
+  <div id="contact-box" class="row" >
+      <div class="col-md-6 col-sm-12" >
+        <div class="block" >
+          <h2 >Contact Us</h2>
           <ul class="address-block">
             <li>
               <i class="fa fa-map-marker"></i>#259, Hostel-5, IIT-Bombay, Mumbai
@@ -266,6 +291,7 @@
             </div>
         </div>
       </div>
+  </div>
   </div>
 
 </section>
