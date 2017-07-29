@@ -125,6 +125,10 @@ function test(elID)
       });
 
       $('#submitsub').html("Subscribed");
+      $('#submitsub').each(function (){
+        this.style.pointerEvents = 'none'; 
+        }); 
+
     });
   });
 
@@ -138,7 +142,7 @@ function test(elID)
           <h1 class="animated fadeInUp">Sepal: Shield for the wheeled</h1>
           <p class="animated fadeInUp">Sepal - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
             <form id="Sub">
-                  <input id="emailsub" type="text" placeholder="email address" value=' '>
+                  <input id="emailsub" type="text" placeholder="email address" style="color: #C0C0C0;">
                   <button id="submitsub" type="submit" class="btn btn-view-works" >
                   Subscribe
                   </button>
