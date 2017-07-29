@@ -6,7 +6,7 @@ permalink: /
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 <script>
   $(document).ready(function() {
-    $('#Sub').submit(function(event) {
+    $('#Sub').one('submit',function(event) {
       event.preventDefault();
       $.ajax(
       {type:"POST",
@@ -27,7 +27,7 @@ permalink: /
           <h1 class="animated fadeInUp">Sepal: Shield for the wheeled</h1>
           <p class="animated fadeInUp">Sepal - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
             <form id="Sub">
-                  <input id="emailsub" type="text" placeholder="email address" value="email">
+                  <input id="emailsub" type="text" placeholder="email address" value=' '>
                   <button id="submitsub" type="submit" class="btn btn-view-works" >Subscribe</input>
             </form>
 
