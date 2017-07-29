@@ -15,8 +15,11 @@ permalink: /
       'entry.378521650':$("#emailsub").val()
       }
       });
+
+      $('#submitsub').html("Subscribed");
     });
   });
+
 </script>
 <!-- Slider Start -->
 <section id="slider">
@@ -28,7 +31,10 @@ permalink: /
           <p class="animated fadeInUp">Sepal - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
             <form id="Sub">
                   <input id="emailsub" type="text" placeholder="email address" value=' '>
-                  <button id="submitsub" type="submit" class="btn btn-view-works" >Subscribe</input>
+                  <button id="submitsub" type="submit" class="btn btn-view-works" onclick="this.disabled = true">
+                  Subscribe
+                  </button>
+                  </input>
             </form>
 
         </div>
