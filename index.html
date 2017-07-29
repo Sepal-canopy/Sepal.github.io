@@ -12,6 +12,7 @@ permalink: /
         <div class="block">
           <h1 class="animated fadeInUp">Sepal: Shield for the wheeled</h1>
           <p class="animated fadeInUp">Sepal - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
+             <button onclick="submitResponse()" class="btn btn-view-works">Subscribe</button>
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@ permalink: /
 </br></br>
   The extended canopy coupled with the water-repellent windshield will ensure you have a smooth and comfortable ride whether it is scorching or showering   outside. You will never have to deal with the likes of raincoat again
 </p>
-      <!--<a href="#" class="btn btn-view-works">View Works</a>-->
+     
     </div>
   </div>
 </div>
@@ -189,7 +190,15 @@ permalink: /
 
 </section>
 
+<script type="text/javascript">
+  function submitResponse() {
+  var xhttp = new XMLHttpRequest();
+  
+  xhttp.open("POST", "https://docs.google.com/forms/d/e/1FAIpQLSfn6rmMCJoh8AoCdZNN766qSNgRqbjuWwKq3s2w7NDgEruuLw/formResponse", false);
+  xhttp.send("entry.378521650:agrimgupta@gmail.com");
+}
 
+</script>
 
 <!-- Content Start 
 <section id="testimonial">
