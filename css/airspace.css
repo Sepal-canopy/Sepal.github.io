@@ -501,7 +501,7 @@ Intro2
 #global-header {
   background: url("../img/slider-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
   background-attachment: fixed;
