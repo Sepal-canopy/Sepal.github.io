@@ -294,7 +294,7 @@ Intro2
   padding: 90px 0;
   background-image: url(../img/feature-bg.jpg);
   background-size: cover;
-}
+}s
 #service .section-title{
   color: white;
 }
@@ -501,7 +501,7 @@ Intro2
 #global-header {
   background: url("../img/slider-bg.jpg") no-repeat;
   background-size: cover;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   position: relative;
   background-attachment: fixed;
