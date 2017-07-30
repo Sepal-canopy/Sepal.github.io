@@ -114,8 +114,8 @@ function test(elID)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 <script>
  
-  $(document).ready(function() {
-    $('#Sub').one('submit',function(event) {
+    function makeCall()
+    {
       if(isEmail($("#emailsub").val()))
       {
         event.preventDefault();
@@ -127,18 +127,18 @@ function test(elID)
         }
         });
 
-        $('#submitsub').html("Subscribed");
+        $('#submitsub').html("You've been Subscribed :)");
         $('#submitsub').each(function (){
           this.style.pointerEvents = 'none'; 
           }); 
       }
       else
       {
-        $('#submitsub').html("Enter Valid Email");        
+        $('#submitsub').html("Enter Valid Email and click again");        
       }
       return false;
-    });
-  });
+    }
+
 
 function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -174,7 +174,7 @@ $(document).ready(function(){
           <p class="animated fadeInUp">Sepal - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
             <form id="Sub">
                   <input id="emailsub" type="text" placeholder="email address" style="color: #C0C0C0;">
-                  <button id="submitsub" type="submit" class="btn btn-view-works" >
+                  <button id="submitsub" onclick="return makeCall()" class="btn btn-view-works" >
                   Subscribe
                   </button>
                   </input>
