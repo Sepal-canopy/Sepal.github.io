@@ -292,7 +292,8 @@ Intro2
 #service {
   text-align: center;
   padding: 90px 0;
-  background-color: black;
+  background-image: url(../img/feature-bg.jpg);
+  background-size: cover;
 }
 #service .section-title{
   color: white;
