@@ -113,25 +113,55 @@ function test(elID)
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 <script>
+ 
   $(document).ready(function() {
     $('#Sub').one('submit',function(event) {
-      event.preventDefault();
-      $.ajax(
-      {type:"POST",
-      url: "http://www.docs.google.com/forms/d/e/1FAIpQLSfn6rmMCJoh8AoCdZNN766qSNgRqbjuWwKq3s2w7NDgEruuLw/formResponse",
-      data: {
-      'entry.378521650':$("#emailsub").val()
+      if(isEmail($("#emailsub").val()))
+      {
+        event.preventDefault();
+        $.ajax( 
+        {type:"POST",
+        url: "http://www.docs.google.com/forms/d/e/1FAIpQLSfn6rmMCJoh8AoCdZNN766qSNgRqbjuWwKq3s2w7NDgEruuLw/formResponse",
+        data: {
+        'entry.378521650':$("#emailsub").val()
+        }
+        });
+
+        $('#submitsub').html("Subscribed");
+        $('#submitsub').each(function (){
+          this.style.pointerEvents = 'none'; 
+          }); 
       }
-      });
-
-      $('#submitsub').html("Subscribed");
-      $('#submitsub').each(function (){
-        this.style.pointerEvents = 'none'; 
-        }); 
-
+      else
+      {
+        $('#submitsub').html("Enter Valid Email");        
+      }
     });
   });
 
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+/*
+$(document).ready(function(){
+  $("#submitsub").hover(function(){
+    if(!isEmail($("#emailsub").val()))
+    {
+      $('#submitsub').html("Enter valid email");      
+      $('#submitsub').each(function (){
+      this.style.pointerEvents = 'hover'; 
+      });
+    } 
+    else {
+      $('#submitsub').html("Email Validated...Subscribe ?");      
+      $('#submitsub').each(function (){
+      this.style.pointerEvents = 'click'; 
+      }); 
+    }
+  });
+});
+*/
 </script>
 <!-- Slider Start -->
 <section id="slider">
