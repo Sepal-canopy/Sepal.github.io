@@ -1,0 +1,511 @@
+---
+layout: page
+title: Sepal
+permalink: /
+---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script>
+ 
+    function makeCall()
+    {
+      if(isEmail($("#emailsub").val()))
+      {
+        event.preventDefault();
+        $.ajax( 
+        {type:"POST",
+        url: "http://www.docs.google.com/forms/d/e/1FAIpQLSfn6rmMCJoh8AoCdZNN766qSNgRqbjuWwKq3s2w7NDgEruuLw/formResponse",
+        data: {
+        'entry.378521650':$("#emailsub").val()
+        }
+        });
+
+        $('#submitsub').html("You've been Subscribed :)");
+        $('#submitsub').each(function (){
+          this.style.pointerEvents = 'none'; 
+          }); 
+      }
+      else
+      {
+        $('#submitsub').html("Enter Valid Email and click again");        
+      }
+      return false;
+    }
+
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+/*
+$(document).ready(function(){
+  $("#submitsub").hover(function(){
+    if(!isEmail($("#emailsub").val()))
+    {
+      $('#submitsub').html("Enter valid email");      
+      $('#submitsub').each(function (){
+      this.style.pointerEvents = 'hover'; 
+      });
+    } 
+    else {
+      $('#submitsub').html("Email Validated...Subscribe ?");      
+      $('#submitsub').each(function (){
+      this.style.pointerEvents = 'click'; 
+      }); 
+    }
+  });
+});
+*/
+
+
+</script>
+<link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+<!-- Slider Start -->
+<section id="slider" >
+<div id="Internal_Link4">
+ <div class="container" style="padding: 20% 0 20% 0;">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block" style="text-align: center;">
+        <center>
+          <!--<h1 class="animated fadeInUp">Sepal: Shield for the wheeled</h1>
+          -->
+          <p class="animated fadeInUp" ><b style="font-weight: 700; ">Sepal</b> - The only device you will ever need to get complete environmental protection and ultimate comfort on your bike</p>
+            <form id="Sub">
+                  <input id="emailsub" type="text" placeholder="  Email Address" style="color: black; height: 35px; width: 300px;" >
+                  <button id="submitsub" onclick="return makeCall()" class="btn btn-view-works" >
+                  Subscribe
+                  </button>
+                  </input>
+            </form>
+        </center>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container2" >
+  <div id="Internal_Link1" class="offset">
+    <div class="row">
+      <div class="col-md-7 col-sm-12" style="padding: 50px 50px 0px 50px;">
+        <div class="block" style="margin-right: 0px;">
+          
+            
+            <h2 >A Design That Feels Too Good To Be True</h2>
+            <p>We know how much you love your bike, we know how much you love riding it unconstrained. And so we have put in our heart and soul in designing sepal so that you don’t have to make single modification on your bike to fix it. Also fixing Sepal is super simple, you can do it all by yourself within 5 minutes
+            </br></br>
+           Biking is all about enjoying the right moments with the right view and fresh breeze. In such moments you can close sepal and it will sit snugly on the petrol tank not causing any hindrance to your experience. In case the moments aren’t right then sepal got you covered. Like literally.
+          
+          </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12" style="padding-right: 0px;">
+        <div class="block">
+          <img src="img/product4.png" alt="Img" style="padding-top: 50px; padding-left: 0px;">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+
+
+
+
+    <div class="row" >
+    <div class="col-md-5 col-sm-12" style="padding: 0px 0px 0px 0px;">
+        <div class="block" style="padding: 0px 0px; margin: 0px 0px 0 0; text-align: right;">
+          <img src="img/prod22.png" alt="Img" style="height: 10%;width: 80%; ">
+        </div>
+      </div>
+    <div class="col-md-7 col-sm-12" style="padding-top: 10%; padding-bottom: 10%; padding-left:50px; padding-right: 50px;">
+      <div class="block">
+      <h2 ;">You Are In Control Of Your Schedule</h2>
+      <p style="margin-left: 0px;">Don’t let the climate around you to dictate your travel plans. With sepal you can get all the comforts you need in less than 10 seconds, without even having to get off your seat
+</br></br>
+  The extended canopy coupled with the water-repellent windshield will ensure you have a smooth and comfortable ride whether it is scorching or showering   outside. You will never have to deal with the likes of raincoat again
+</p>
+</div>
+     
+    </div>
+  </div>
+  
+
+
+
+  <div class="row">
+      <div class="col-md-7 col-sm-12" style="padding: 10% 50px 10% 50px;">
+        <div class="block">
+          
+            <h2>Comfort That Has Never Been Experienced </h2>
+            <p style="margin-right: 0px;">Soreness after a long day in traffic will now be a thing of the past. With a few simple actions Sepal transforms to give riders backrest which until now was only privy to cars. Now you can  focus on enjoying your travels and let Sepal bear your troubles.
+            </br></br>
+            Structural integrity and safety of the user is our utmost priority. We put  the design through intensive simulations and road tests and ensured it is in the purview of RTO regulations before making it available.          
+          </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block" style="text-align: left;">
+          <img src="img/prod33.png" alt="Img" style="margin-top: 0px; width: 75%;">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section id="intro2">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <div class="block">
+      <h2>You are in control of your schedule</h2>
+      <p>Don’t let the climate around you to dictate your travel plans. With sepal you can get all the comforts you need in less than 10 seconds, without even having to get off your seat
+</br></br>
+  The extended canopy coupled with the water-repellent windshield will ensure you have a smooth and comfortable ride whether it is scorching or showering   outside. You will never have to deal with the likes of raincoat again
+</p>
+</div>
+     
+    </div>
+  </div>
+</div>
+</section>
+-->
+
+<!--<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          
+            <h2>Comfort that has never been experienced on a bike </h2>
+            <p>Soreness after a long day in traffic will now be a thing of the past. With a few simple actions Sepal transforms to give riders backrest which until now was only privy to cars. Now you can  focus on enjoying your travels and let Sepal bear your troubles.
+            </br></br>
+            Structural integrity and safety of the user is our utmost priority. We put  the design through intensive simulations and road tests and ensured it is in the purview of RTO regulations before making it available.          
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <img src="img/prod3.png" alt="Img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+-->
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container" >
+  <div id="Internal_Link2" class="offset">
+    <div class="row">
+      <div class="section-title">
+        <center>
+        <div style="width: 400px;padding: 0px 50px;">
+        <center><h2 >Features</h2></center>
+        </div>
+        </center>
+      </div>
+    </div>
+    <div class="row " style="margin-top: -40px;">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-android-hand" ></i>
+          <h4>On Demand</h4>
+          <p>Enjoy unhindered driving while getting protection only when required</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-settings"></i>
+          <h4>DIY </h4>
+          <p>Super easy installation. No modifications needed on your bike</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-bag"></i>
+          <h4>No Baggage </h4>
+          <p>Free from the burden to carry anything extra when going out in rain</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-key"></i>
+          <h4>Anti-Theft</h4>
+          <p>Secured with reinforced straps and a combination lock  </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-medkit"></i>
+          <h4>Safety</h4>
+          <p>Carefully designed cushions to enhance safety in accidents </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-social-windows"></i>
+          <h4>Windshield</h4>
+          <p>Detachable windshield to protect you from all sorts of gusts - hot, cold or wet</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item" >
+          <i class="ion-umbrella"></i>
+          <h4>Side flaps</h4>
+          <p>Get complete rain protection till your knees even in the worst of rains </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item" >
+          <i class="ion-android-options"></i>
+          <h4>Customisation </h4>
+          <p>Option to choose from a variety of canopy designs and colours </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to action Start -->
+
+<section id="call-to-action" >
+ <div > <a name="Bot"></a>
+  <div id="contact-box" class="row" >
+      <div class="block">
+      <center>
+        <div style="width: 400px; padding: 0px 50px;">
+        <h2>Contact Us </h2>
+        </div>
+        </center>
+      </div>
+      <div class="col-md-4 col-sm-12" >
+        <div class="block" >
+          
+          <ul class="address-block">
+              <center>
+              <i class="fa fa-map-marker" ></i>
+<<<<<<< HEAD
+              <h3> Hostel 5, IIT Bombay, Mumbai Powai </h3>
+              </center>
+=======
+              <h3> SINE, IIT Bombay, Mumbai Powai </h3>
+>>>>>>> 9e0f43ed216e5f58368ec43222ac5955982a9cc1
+            </ul>
+
+          
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12" >
+        <div class="block" >
+          
+          <ul class="address-block">
+          <center>
+            <i class="fa fa-envelope-o"></i>
+
+<<<<<<< HEAD
+            <h3> Email: info@sepal.in </h3>
+            </center>
+=======
+            <h3> Email: sepal.info1@gmail.com </h3>
+
+          </ul>
+          <ul class="social-icons" style="margin-left: ">
+            <li style="margin: auto auto">
+>>>>>>> 9e0f43ed216e5f58368ec43222ac5955982a9cc1
+          
+
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12" >
+        <div class="block" >
+          
+          <ul class="address-block">
+            <center>
+            <i class="fa fa-phone"></i>
+            <h3> Phone:+91 9769474495 </h3>
+            </center>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+      <center>
+        </ul>
+          <ul class="social-icons" style="margin-left: ">
+            <li style="margin: auto auto">
+          
+              <a href="https://www.facebook.com/vidhey"><i class="fa fa-facebook" ></i></a>
+              <a href="https://www.linkedin.com/in/vidhey-addepally-19456080/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/Sepal-canopy"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+          </center>
+        </div>
+
+      <!--
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>We Also Count In Google Map</h2>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.338107380023!2d72.90953225972207!3d19.134943696844527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b807e5f3ef61%3A0x937e3ffa2e86855b!2sHostel+5%2C+IIT+Bombay!5e0!3m2!1sen!2sin!4v1500802436774" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </div>
+      </div> -->
+      </div>
+  </div>
+  </div>
+  </div>
+
+</section>
+
+
+
+
+              
+            
+            
+             
+            
+
+<!--
+<section id="call-to-action" >
+ <div class="container" id="Internal_Link3">
+ <div >
+  <div id="contact-box" class="row" >
+      <div class="col-md-6 col-sm-12" >
+        <div class="block" >
+          <h2 >Contact Us</h2>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-map-marker" style="size: 30 0px;"></i>#259, Hostel-5, IIT-Bombay, Mumbai
+            </li>
+            <li>
+              <i class="fa fa-envelope-o"></i>Email: info@sepal.in
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>Phone:+91 9769474495 </li>
+            </li>
+
+          </ul>
+
+          <ul class="social-icons" >
+          
+              <a href="https://www.facebook.com/vidhey"><i class="fa fa-facebook" ></i></a>
+              <a href="https://www.linkedin.com/in/vidhey-addepally-19456080/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/Sepal-canopy"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>We Also Count In Google Map</h2>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.338107380023!2d72.90953225972207!3d19.134943696844527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b807e5f3ef61%3A0x937e3ffa2e86855b!2sHostel+5%2C+IIT+Bombay!5e0!3m2!1sen!2sin!4v1500802436774" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+</section>
+-->
+
+<!-- Content Start 
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Fun Facts About Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="block">
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4 class="counter">20000</h4>
+                <span>Cups Of Coffee</span>
+              </div>
+            </li>
+            <li>
+              <div class="block">
+                <i class="ion-ios-glasses-outline"></i>
+                <h4 class="counter">20000</h4>
+                <span>Cups Of Coffee</span>
+              </div>
+            </li>
+            <li>
+              <div class="block">
+                <i class="ion-ios-compose-outline"></i>
+                <h4 class="counter">20000</h4>
+                <span>Cups Of Coffee</span>
+              </div>
+            </li>
+            <li>
+              <div class="block">
+                <i class="ion-ios-timer-outline"></i>
+                <h4 class="counter">20000</h4>
+                <span>Cups Of Coffee</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+                <div class="user">
+                  <img src="img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            <div>
+              <img src="img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+                <div class="user">
+                  <img src="img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            <div>
+              <img src="img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+                <div class="user">
+                  <img src="img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            <div>
+              <img src="img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+                <div class="user">
+                  <img src="img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<a name="Bot"></a>
