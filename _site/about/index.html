@@ -31,6 +31,27 @@
 
 
 <script src="/js/main.js"></script>
+<script type="text/javascript">
+      
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+
+	function swapSibling(node1, node2) {
+        node1.parentNode.replaceChild(node1, node2);
+        node1.parentNode.insertBefore(node2, node1); 
+      }
+
+
+      if( isMobile.matches ) {
+ 		
+      window.onload = function() {
+        swapSibling(document.getElementById('divImg'), document.getElementById('divTxt'));}
+
+      }
+		
+
+      
+    </script>
 
 <!--
 /*
@@ -57,15 +78,15 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <div class="navbar-header" style="height: 70px; padding: 0% 0%;" >
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.sepal.in">
-              <img src="/img/logo4.png" alt="Logo">
+            </button> -->
+            <a class="navbar-brand" href="http://www.sepal.in" style=" height: 70px; padding: 3% 3%;">
+              <img src="/img/logo4.png" alt="Logo" height="100%">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -116,10 +137,14 @@ function test(elID)
 <section id="slider2">
   <div class="container">
     <div class="row">
-     <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="block">
-          <h1 class="animated fadeInUp"><center>Our Story</center></h1>
+     
+      <div class="col-md-12 col-sm-12">
+        <div class="block" style="padding: 6% 5%;">
+        <center>
+        <div style="width: 300px;padding: 0px 50px; margin-right: 100px">
+          <h1 class="animated fadeInUp">Our Story</h1>
+          </div>
+          </center>
           <center>
           <p class="animated fadeInUp" >
             It all started while we were studying at IIT Bombay. Mumbai being itself, would pour down without a break during monsoons. Everyone including us found it extremely difficult and frustrating to commute on their  cycles. We being the passionate engineers that we are wondered if we could come up with a feasible solution for everyone. And that is how Sepal came into existence. After an entire year of designing, prototyping and iterating we have finally come up with the perfect design that goes beyond anybody’s expectations.
@@ -127,11 +152,14 @@ function test(elID)
           </center>  
         </div>
 
-        <div class="block">
-          
+        <div class="block" style="padding: 0% 5%;">
+          <center>
+        <div style="width: 300px;padding: 0px 50px;">
             <h1 class="animated fadeInUp"><center>Our Vision</center></h1>
+            </div>
+            </center>
             <center>
-            <p class="animated fadeInUp" style="padding-bottom: 50px;">
+            <p class="animated fadeInUp" style="padding-bottom: 10px;">
             Today commutes are synonymous with waste of time and inconvenience. It is our vision to make commutes not only comfortable and productive but also safe and fun. We can and will achieve this through a series of technological innovations, new product verticals and move towards our vision, one step at a time.
             
           </p>
@@ -141,7 +169,7 @@ function test(elID)
 
 
       </div>
-     <div class="col-md-1"></div>
+     
 
     </div>
   </div>
@@ -175,13 +203,17 @@ function test(elID)
         <div class="row">
           <div class="col-md-12"  >
             <div class="block2">
-              <h1><center>The Team</center></h1>
+              <center>
+              <div style="width: 300px;padding: 0px 50px;">
+                <h1><center>The Team</center></h1>
+              </div>
+              </center>
             </div>
             <div class="block" >
               <div class="portfolio-contant" > 
                <ul id="portfolio-contant-active">
                   
-                  <li class="mix tStart">                               
+                  <li class="mix tStart" >                               
                     <img src="../img/vidhey.png">
                     <div class="overly">
                       <div class="position-center">
@@ -208,8 +240,8 @@ function test(elID)
                       </div>
                     </div>
                    </li>
-                   <li class="mix tStart">                               
-                    <img src="../img/shivaji.png">
+                   <li class="mix tStart" >                               
+                    <img src="../img/shivaji.jpg">
                     <div class="overly">
                       <div class="position-center">
                         <h2>Shivaji Niranjan</h2>
@@ -234,39 +266,52 @@ function test(elID)
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="block"> 
+        <center>
+        <div style="width: 300px;padding: 0px 50px;">
             <h2><center>Our Achievments</center></h2>
+            </div>
+            </center>
               
         </div>
 
       </div><!-- .col-md-7 close -->
     </div>
     <div class="row" >
-      <div class="imgrow">
-      <img src="../img/DST.jpg" height="200px" width="200px" style="margin:20px 15px">
-            <img src="../img/eureka_logo.png" height="200px" width="550px" style="margin:20px 20px">
-            <img src="../img/sine-logo.png" height="200px" width="200px" style="margin:20px 0px">
+      <div class="col-md-3 col-sm-12" style="text-align: center;">
+          <img src="../img/DST.jpg" height=200px   style="padding:20px 10px; background-size: cover;">
+      </div>
+
+
+      <div class="col-md-6 col-sm-12" style="text-align: center;">
+            <img src="../img/eureka_logo.png" width="100%" style="padding: 20px 20px; background-size: cover;">
+      </div>
+      <div class="col-md-3 col-sm-12" style="text-align: center;">
+            <img src="../img/sine-logo.png"  height="200px" style="padding:20px 20px; background-size: cover;">
+      </div>
       </div>
     </div>
   </div>
   
 
-</section>
-
-<!-- Call to action Start -->
-
 <section id="call-to-action" >
  <div > <a name="Bot"></a>
   <div id="contact-box" class="row" >
       <div class="block">
-      <h2>Contact Us</h2>
+      <center>
+        <div style="width: 300px; padding: 0px 50px;">
+        <h2>Contact Us </h2>
+        </div>
+        </center>
       </div>
       <div class="col-md-4 col-sm-12" >
         <div class="block" >
           
           <ul class="address-block">
-            
+              <center>
               <i class="fa fa-map-marker" ></i>
-              <h3> Hostel 5, IIT Bombay, Mumbai Powai </h3>
+
+              <h3> SINE, IIT Bombay, Mumbai Powai </h3>
+              </center>
             </ul>
 
           
@@ -277,19 +322,11 @@ function test(elID)
         <div class="block" >
           
           <ul class="address-block">
-
+          <center>
             <i class="fa fa-envelope-o"></i>
+            <h3> Email: sepal.info1@gmail.com </h3>
+            </center>
 
-            <h3> Email: info@sepal.in </h3>
-
-          </ul>
-          <ul class="social-icons" style="margin-left: ">
-            <li style="margin: auto auto">
-          
-              <a href="https://www.facebook.com/vidhey"><i class="fa fa-facebook" ></i></a>
-              <a href="https://www.linkedin.com/in/vidhey-addepally-19456080/"><i class="fa fa-linkedin"></i></a>
-              <a href="https://github.com/Sepal-canopy"><i class="fa fa-github"></i></a>
-            </li>
           </ul>
 
         </div>
@@ -299,13 +336,28 @@ function test(elID)
         <div class="block" >
           
           <ul class="address-block">
-
+            <center>
             <i class="fa fa-phone"></i>
             <h3> Phone:+91 9769474495 </h3>
-
+            </center>
           </ul>
         </div>
       </div>
+
+      <div class="block">
+      <center>
+        </ul>
+          <ul class="social-icons" style="margin-left: ">
+            <li style="margin: auto auto">
+          
+              <a href="https://www.facebook.com/vidhey"><i class="fa fa-facebook" ></i></a>
+              <a href="https://www.linkedin.com/in/vidhey-addepally-19456080/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/Sepal-canopy"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+          </center>
+        </div>
+
       <!--
       <div class="col-md-6 col-sm-12">
         <div class="block">

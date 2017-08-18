@@ -27,6 +27,27 @@
 
 
 <script src="{{ site.baseurl }}/js/main.js"></script>
+<script type="text/javascript">
+      
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+
+	function swapSibling(node1, node2) {
+        node1.parentNode.replaceChild(node1, node2);
+        node1.parentNode.insertBefore(node2, node1); 
+      }
+
+
+      if( isMobile.matches ) {
+ 		
+      window.onload = function() {
+        swapSibling(document.getElementById('divImg'), document.getElementById('divTxt'));}
+
+      }
+		
+
+      
+    </script>
 
 <!--
 /*

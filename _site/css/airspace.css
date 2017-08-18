@@ -9,6 +9,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+
 /* var text-decoration */
 /*--
 	Common Css
@@ -80,7 +81,7 @@ header {
   top: 0;
   z-index: +1;
   background-color: black;
-  padding: 0px 0;
+  padding: 0px 0px;
 }
 header .navbar {
   margin-bottom: -7px;
@@ -99,8 +100,8 @@ header .navbar-default .navbar-nav {
 }
 header .navbar-default .navbar-nav li a {
   color: white;
-  padding: 10px 10px;
-  margin: 10px  10px;
+  padding: 20px 10px 10px 10px;
+  margin: 0px  10px 10px 10px;
   font-size: 16px;
 
 }
@@ -110,9 +111,9 @@ header .navbar-default .navbar-nav li a:hover {
   color: white;
 }
 
-header .navbar-default .navbar-nav li a:target {
+header .navbar-default .navbar-nav li a:visited {
   
-  color: black;
+  color: white;
 }
 
 header .navbar-default .navbar-nav li a:before {
@@ -132,7 +133,7 @@ header .navbar-default .navbar-nav li a:before {
 
 
 header .navbar-default .navbar-nav li a:hover:before {
-  height: 155%;
+  height: 120%;
   opacity: 0.6;
   z-index: -1;
 }
@@ -149,7 +150,7 @@ header .navbar-default .navbar-nav li a:hover:before {
   background-size: cover;
   background-attachment: scroll;
   background-position: 10% 0%;
-  padding: 0 0 280px 0;
+  
   position: relative;
 }
 /*
@@ -168,13 +169,13 @@ header .navbar-default .navbar-nav li a:hover:before {
 */
 #slider .block {
   color: #E3E3E4;
-  padding-right: 30%;
-  padding-top: 250px;
+  /*padding-right: 30%;
+  padding-top: 250px;*/
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 45px;
+  /*font-size: 45px;*/
   line-height: 60px;
   letter-spacing: 10px;
   padding-bottom: 45px;
@@ -205,7 +206,7 @@ background: #464646;
   slider start
 --*/
 #slider2 {
-  background: url("../img/generic2.png") no-repeat;
+ background: url("../img/generic2.png") no-repeat;t;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -229,7 +230,7 @@ background: #464646;
 }
 #slider2 .block h1 {
   text-transform: none !important;
-  margin: 0px 300px;
+  
   border-bottom: 50px solid #630009;
   border-bottom-width: 2px;
 
@@ -237,19 +238,19 @@ background: #464646;
   
   font-family: "sans-serif";
   font-weight: 500;
-  font-size: 30px;
-  color: #464646 ;
+  
+  color: black ;
   padding-bottom: 10px;
   /*padding-left: 50%*/
   text-align: center;
-  padding-top: 80px;
+  font-size: 30px;
   margin-bottom: 20px;
 
 }
 #slider2 .block p {
-  color: #464646;
+  color: black;
   padding-top: 5px;
-  font-size: 18px;
+  
 }
 #slider2 .btn-view-works {
   background: #655E7A;
@@ -261,34 +262,39 @@ background: #464646;
 --*/
 #intro {
   padding: 10px 0;
-  padding-top: 40px;
-  padding-left: 50px;
+  padding-top: 0px;
+  padding-left: 0px;
   background: url("../img/generic2.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 #intro .block h2 {
 
-  border-bottom: 5px solid #630003;
-  border-bottom-width: 2px;
+  padding-bottom: 10px;
+  
+  border-bottom: 2px solid #630003;
+  
   border-spacing: 100px 20px;
   text-align: center;
-
-  font-weight: bold;
-  padding-top: 35px;
-  padding-bottom: 10px;
+  /*font-size: 26px;*/
+  /*font-weight: bold;*/
+  
   line-height: 27px;
-  margin: 0;
+  
+  color: black;
 }
 #intro .block p {
-  color: #464646;
+  /*color: #464646;*/
+  color: black;
   padding-top: 28px;
-  font-size: 18px;
+  /*font-size: 18px;*/
+  padding: 10px;
+  text-align: center;
 }
 #intro .block img {
-  margin-top: -50px;
-  padding-left: 40px;
-  margin-left: 15px;
+  margin-top: 0px;
+  /*padding-left: 40px;
+  margin-left: 15px;*/
   width: 100%;
 }
 #intro .section-title {
@@ -373,9 +379,10 @@ Intro2
 --*/
 #intro3 {
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   background: url("../img/generic2.png") no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 #intro3 .imgrow {
   width:1050px;
@@ -385,7 +392,6 @@ Intro2
 
 #intro3 .block h2 {
  text-transform: none !important;
-  margin: 0px 400px;
   border-bottom: 50px solid #630009;
   border-bottom-width: 2px;
 
@@ -394,7 +400,7 @@ Intro2
   font-family: "sans-serif";
   font-weight: 500;
   font-size: 30px;
-  color: #464646 ;
+  color: black;
   padding-bottom: 10px;
   /*padding-left: 50%*/
   text-align: center;
@@ -423,8 +429,10 @@ Intro2
 #service {
   text-align: center;
   padding: 40px 0;
+  /*background-color: black; */
   background-image: url(../img/feature-bg3.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-attachment: fixed;
 }s
 #service .section-title {
   color: white;
@@ -432,7 +440,7 @@ Intro2
 
 #service .section-title h2 {
   text-transform: none !important;
-  margin: 0px 400px;
+  margin: 0px 0px;
   border-bottom: 50px solid #630009;
   border-bottom-width: 2px;
 
@@ -441,7 +449,7 @@ Intro2
   font-family: "sans-serif";
   font-weight: 500;
   font-size: 30px;
-  color: lightgrey ;
+  color: white ;
   padding-bottom: 10px;
   /*padding-left: 50%*/
   text-align: center;
@@ -455,7 +463,7 @@ Intro2
   transition: all 0.5s;
 }
 
-#service .service-item:hover {
+/*#service .service-item:hover {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -465,13 +473,14 @@ Intro2
   border-radius: 20px;
   color: white;
 
-}
+}*/
 
 #service .service-item i {
   margin: 10px 10px;
   font-size: 50px;
-  /*color: #4A4656;*/
-  color: white;
+  color: grey;
+  opacity: 1;
+  /*color: white;*/
   transition: all 0.5s;
 }
 
@@ -483,7 +492,7 @@ Intro2
   color: white;
 }
 #service .service-item p {
-  color: #888;
+  color: white;
   padding-top: 10px;
   margin: 0;
   font-size: 14px;
@@ -493,7 +502,7 @@ Intro2
 	call-to-action Start
 --*/
 #call-to-action {
-  background: url("../img/generic2.png") no-repeat;
+  background: url("../img/generic2.png");
   background-size: cover;
   background-attachment: fixed;
   padding: 0px 0px;
@@ -532,6 +541,7 @@ Intro2
   margin-right:auto;
     margin-left:auto;
   font-size: 30px;
+  color: black;
 }
 #call-to-action p {
   font-size: 14px;
@@ -791,7 +801,7 @@ Intro2
 
 #portfolio-work .block2 h1{
 text-transform: none !important;
-  margin: 0px 400px;
+  
   border-bottom: 50px solid #630003;
   border-bottom-width: 2px;
 
@@ -804,7 +814,7 @@ text-transform: none !important;
   padding-bottom: 10px;
   /*padding-left: 50%*/
   text-align: center;
-  padding-top: 30px;
+  color: white;
   margin-bottom: 30px;
 
 }
@@ -1040,7 +1050,7 @@ text-transform: none !important;
   margin-right: 0px;
 }
 .address-block  i {
-  margin-left: 152.5px;
+  text-align: right;
   padding: 0px 0px;
   font-size: 100px;
   color: #660003
@@ -1059,6 +1069,7 @@ text-transform: none !important;
   padding: 10px 10px;
   text-align: center;
   margin: 0px 0px;
+  color: black;
 }
 
 .social-icons {
@@ -1066,7 +1077,7 @@ text-transform: none !important;
 }
 .social-icons li {
 
-  padding-left: 130.5px;
+  padding-left: 0px;
   
 }
 .social-icons a {
@@ -1089,23 +1100,24 @@ text-transform: none !important;
   background-color: #ff432e;
 }
 #contact-box {
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 #contact-box .block img {
   width: 100%;
 }
 #contact-box .block h2 {
-  margin: 0px 500px;
-  border-bottom: 50px solid #630009;
+  margin: 0px 0px;
+  border-bottom:solid #630009;
   border-bottom-width: 2px;
+  border-bottom-color: 
+  bottom:10%; 
 
-  border-spacing: 50px 20px;
+  border-spacing: 500px 200px;
   
   font-family: "sans-serif";
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  color: #464646;
+  font-weight: 500;
+  color: black;
   font-size: 30px;
   padding-bottom: 10px;
   margin-bottom: 30px;  
