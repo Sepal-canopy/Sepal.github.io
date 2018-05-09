@@ -146,7 +146,7 @@ header .navbar-default .navbar-nav li a:hover:before {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg2.png") no-repeat;
+  background: url("../img/LP 2.jpg") no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-position: 10% 0%;
@@ -382,7 +382,7 @@ Intro2
   padding-bottom: 0px;
   background: url("../img/generic2.png") no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 #intro3 .imgrow {
   width:1050px;
@@ -819,22 +819,29 @@ text-transform: none !important;
 
 }
 
+#portfolio-work .block .portfolio-contant ul {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #portfolio-work .block .portfolio-contant ul li {
   float: left;
   overflow: hidden;
-  margin: 15px;
+  margin: 15px 75px;
   position: relative;
   height: 343px;
   width: 343px;
+  display: inline-flex;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .overly {
-  opacity: 1;
+  opacity: 0.8;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .position-center {
   position: absolute;
   top: calc(50% - height/2);
-  left: 15%;
-  right: 15%;
+  left: 10%;
+  right: 10%;
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
@@ -880,6 +887,8 @@ text-transform: none !important;
   position: absolute;
   top: 50%;
   left: 10%;
+  right: 10%;
+
   -webkit-transform: translate(0%, 50%);
   -moz-transform: translate(0%, 50%);
   -ms-transform: translate(0%, 50%);
